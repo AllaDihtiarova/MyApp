@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-export const Counter = () => {
+export const Counters = () => {
   
   const [counterA, setCounterA] = useState(JSON.parse(window.localStorage.getItem("counterA")) ?? 0);
   const [counterB, setCounterB] = useState(JSON.parse(window.localStorage.getItem("counterB")) ?? 0);

@@ -16,6 +16,20 @@
 }
 
 .counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: inherit;
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+  font-weight: 700;
+  font-size: 30px;
+	letter-spacing: 2px;
+	text-align: center;
+}
+
+.counterDecrement {
   display: table-cell;
   vertical-align: middle;
   font: inherit;
@@ -26,4 +40,36 @@
   font-size: 30px;
 	letter-spacing: 2px;
 	text-align: center;
+  background-color: yellow;
+  color: white;
+}
+
+.counterIncrement {
+  display: table-cell;
+  vertical-align: middle;
+  font: inherit;
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+  font-weight: 700;
+  font-size: 30px;
+	letter-spacing: 2px;
+	text-align: center;
+  background-color: green;
+  color: white;
+}
+
+.toggle {
+  display: table-cell;
+  vertical-align: middle;
+  font: inherit;
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+  font-weight: 700;
+  font-size: 30px;
+	letter-spacing: 2px;
+	text-align: center;
+  background-color: gray;
+  color: white
 }

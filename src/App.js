@@ -5,7 +5,7 @@ import { About } from './components/About';
 import { Blog } from './components/Blog';
 import { Contact } from './components/Contact';
 import { Help } from './components/Help';
-import { Counter } from './components/Counter';
+import { Library } from './screens/Library';
 
 export const App = () => {
 
@@ -16,12 +16,12 @@ export const App = () => {
       <BrowserRouter>
 
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/" element={<Library />} />
+          <Route path="/homepage" element={<HomePage />} />
           <Route path="/about" element={<About />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/help" element={<Help />} />
-          <Route path="/counter" element={<Counter />} />
         </Routes>
 
       </BrowserRouter>

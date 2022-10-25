@@ -1,39 +1,73 @@
-import { useState } from 'react';
-import styles from "../styles/components/Counter.module.css" 
+import styles from '../styles/components/Counter.module.css';
 
-export const Counter = () => {
-  
-  // const [counter, setCounter] = useState(JSON.parse(window.localStorage.getItem("counter")) ?? 0);
-  const [counter, setCounter] = useState(0)
-  const [disabled, setDisabled] = useState(true)
-  
-  const handleCounterIncrement = () => {
-    setCounter(state => state + 1);
+export const Counter = props => {
+  const {
+    counter,
+    isDisabled,
+    handleIncrement,
+    handleDecrement,
+    handleReset,
+    handleSwitch,
+  } = props;
+
+  const getColor = () => {
+    if (counter > 0) {
+      return 'green';
+    } else if (counter < 0) {
+      return 'red';
+    } else {
+      return 'black';
+    }
+
+    // color: counter > 0 ? 'green' : 'red'
+  };
+  const getBackgroundReset = { backgroundColor: isDisabled ? 'red' : 'gray' };
+  const getBackgroundDecrement = {
+    backgroundColor: isDisabled ? 'yellow' : 'gray',
+  };
+  const getBackgroundIncrement = {
+    backgroundColor: isDisabled ? 'green' : 'gray',
   };
 
-  const handleCounterDecrement = () => {
-    setCounter(state => state - 1);
-  };
-
-  const handleReset = () => {
-    setCounter(0)
-  }
-
-  const handleDisabled = () => {
-    setDisabled(!disabled) 
-  }
- 
   return (
-    <div style={{border: "2px solid black", width: "304px"}}>
-    <div className={styles.container}>
-      <button type="button" onClick={handleReset} className={styles.button} style={{ backgroundColor: "red" }}>Reset</button>
-      <button type="button" onClick={handleDisabled} className={styles.button} style={{ backgroundColor: "blue" }}>{ disabled ? "Disabled" : "Enabled"}</button>
-    </div >
-    <div className={styles.container}>
-      <button type="button" onClick={disabled ? handleCounterDecrement : console.log("нажмите кнопку Enable")} className={disabled ? styles.counterDecrement : styles.toggle} >-</button>
-      <div className={styles.counter} style={{color: (counter<0) ? "red" : "green"}}>{ counter }</div>
-      <button type="button" onClick={disabled ? handleCounterIncrement : console.log("нажмите кнопку Enable")} className={disabled ? styles.counterIncrement : styles.toggle}>+</button>
-      </div >
-    </div>  
+    <div className={styles.borderContainer}>
+      <div className={styles.container}>
+        <button
+          type="button"
+          disabled={!isDisabled}
+          onClick={handleReset}
+          className={styles.button}
+          style={getBackgroundReset}
+        >
+          Reset
+        </button>
+        <button type="button" onClick={handleSwitch} className={styles.button}>
+          {isDisabled ? 'Disabled' : 'Enabled'}
+        </button>
+      </div>
+      <div className={styles.container}>
+        <button
+          type="button"
+          disabled={!isDisabled}
+          onClick={handleDecrement}
+          className={styles.counter}
+          style={getBackgroundDecrement}
+        >
+          -
+        </button>
+        <div className={styles.counter} style={{ color: getColor() }}>
+          {counter}
+        </div>
+        <button
+          type="button"
+          disabled={!isDisabled}
+          onClick={handleIncrement}
+          className={styles.counter}
+          style={getBackgroundIncrement}
+        >
+          +
+        </button>
+      </div>
+    </div>
   );
-}
+};

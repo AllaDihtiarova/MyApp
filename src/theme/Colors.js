@@ -46,4 +46,4 @@ const Colors = {
   silver: '#C0C0C0',
 };
 
-export default Colors;
+export default Colors

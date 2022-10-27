@@ -1,20 +1,20 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import { About, Blog, Contact, Help, Home, Library } from './screens';
+import { NavBar } from './components';
 
-export const Navigation = () => {
+export const Navigator = () => {
   return (
-    <div className="App">
       <BrowserRouter>
+        <NavBar/>
         <Routes>
-          <Route path="/home" element={<Home />} />
-          <Route path="/" element={<Library />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/library" element={<Library />} />
           <Route path="/about" element={<About />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/help" element={<Help />} />
         </Routes>
       </BrowserRouter>
-    </div>
   );
 };

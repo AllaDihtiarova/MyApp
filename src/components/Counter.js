@@ -1,4 +1,5 @@
 import styles from '../styles/components/Counter.module.css';
+import { Colors } from '../theme';
 
 export const Counter = props => {
   const {
@@ -12,20 +13,20 @@ export const Counter = props => {
 
   const getColor = () => {
     if (counter > 0) {
-      return 'green';
+      return Colors.green;
     } else if (counter < 0) {
-      return 'red';
+      return Colors.red;
     } else {
-      return 'black';
+      return Colors.black;
     }
   };
-  const getBackgroundReset = { backgroundColor: isDisabled ? 'red' : 'gray' };
+  const getBackgroundReset = { backgroundColor: isDisabled ? Colors.red : Colors.gray2 };
   const getBackgroundDecrement = {
-    backgroundColor: isDisabled ? 'gold' : 'gray',
+    backgroundColor: isDisabled ? Colors.gold : Colors.gray2,
   };
 
   const getBackgroundIncrement = {
-    backgroundColor: isDisabled ? 'green' : 'gray',
+    backgroundColor: isDisabled ? Colors.green : Colors.gray2,
   };
 
   return (

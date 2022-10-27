@@ -1,4 +1,4 @@
-const defaultTodos = [
+export const defaultTodos = [
   {
     id: 1,
     title: "Card1"
@@ -12,5 +12,3 @@ const defaultTodos = [
     title: "Card3"
   }
 ]
-
-export default defaultTodos

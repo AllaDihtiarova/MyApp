@@ -1,7 +1,7 @@
 import { useState } from "react"
 import Button from "./Button"
 import styles from "../styles/components/Form.module.css"
-import defaultTodos from "../constants/index"
+import { defaultTodos } from "../constants"
 import TodoList from "./TodoList"
 
 const Form = () => {

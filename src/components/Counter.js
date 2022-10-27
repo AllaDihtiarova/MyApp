@@ -18,13 +18,12 @@ export const Counter = props => {
     } else {
       return 'black';
     }
-
-    // color: counter > 0 ? 'green' : 'red'
   };
   const getBackgroundReset = { backgroundColor: isDisabled ? 'red' : 'gray' };
   const getBackgroundDecrement = {
-    backgroundColor: isDisabled ? 'yellow' : 'gray',
+    backgroundColor: isDisabled ? 'gold' : 'gray',
   };
+
   const getBackgroundIncrement = {
     backgroundColor: isDisabled ? 'green' : 'gray',
   };

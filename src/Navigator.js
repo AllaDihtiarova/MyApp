@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import { About, Blog, Contact, Help, Home, Library } from './screens';
+import { About, Blog, Contact, Help, Home, Library, ReportDetails } from './screens';
 import { NavBar } from './components';
 
 export const Navigator = () => {
@@ -13,7 +13,8 @@ export const Navigator = () => {
           <Route path="/about" element={<About />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/help" element={<Help />} />
+        <Route path="/help" element={<Help />} />
+        <Route path="/report" element={<ReportDetails/>} />
         </Routes>
       </BrowserRouter>
   );

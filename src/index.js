@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { Navigator } from './Navigator';
+import { Navigator } from './navigation/Navigator';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

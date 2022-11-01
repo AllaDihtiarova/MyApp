@@ -1,16 +1,16 @@
-import { workWeekes } from "../constants"
+import { useLocation } from "react-router-dom";
 import styles from "../styles/components/ReportDetails.module.css"
 
 const ReportDetails = () => {
-  
+  let {state} = useLocation();
+
   return (
     <div className={styles.container}>
-      {workWeekes.map(report =>
-        <div>
-          <h5 className={styles.title}>{report.title}</h5>
+     
+          <h5 className={styles.title}>{state.title}</h5>
           <div className={styles.image}></div>
           <div>
-            {report.description.map(description =>
+            {state.description.map(description =>
               <div>
                 <p className={styles.weekDay}>{description.weekDay}</p>
                 <p className={styles.theme}>{description.theme}</p>
@@ -23,7 +23,7 @@ const ReportDetails = () => {
                 </p>
               </div>)}
           </div>
-        </div>)}  
+          
   </div>
   )
 }

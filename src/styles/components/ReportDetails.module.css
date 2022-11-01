@@ -1,6 +1,7 @@
 .container {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   margin: 20px auto;
 
   font-family: "Varta", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -8,6 +9,7 @@
 }
 
 .image {
+  margin: auto;
   width: 450px;
   height: 300px;
   background-image: url("https://kibit.edu.ua/wp-content/uploads/2017/04/post-fd6e0c1391aa5d827aaa094cd0e37bc8.jpg");
@@ -35,10 +37,12 @@
   font-size: 16px;
   font-weight: 600;
   font-style: italic;
+  text-align: center;
 }
 
 .skill { 
   font-weight: 400;
   font-size: 16px;	
   color: #757C7F;
+  text-align: center;
 }

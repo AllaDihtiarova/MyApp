@@ -2,7 +2,7 @@ import styles from '../styles/components/ReportCard.module.css'
 
 const ReportCard = (props) => { 
   const {title, main, date, onSelect} = props
-
+  
   return (
     <div className={styles.container}>
       <div className={styles.image}></div>

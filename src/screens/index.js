@@ -5,5 +5,8 @@ import Help from './Help';
 import Home from './Home';
 import Library from './Library';
 import ReportDetails from './ReportDetails';
+import Author from './Author';
+import Articles from './Articles';
+import News from './News';
 
-export { About, Blog, Contact, Help, Home, Library, ReportDetails };
+export { About, Blog, Contact, Help, Home, Library, ReportDetails, Author, Articles, News };

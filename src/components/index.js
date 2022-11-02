@@ -4,5 +4,6 @@ import Form from './Form'
 import TodoList from './TodoList'
 import NavBar from './NavBar'
 import ReportCard from './ReportCard'
+import SwitchTabs from './SwitchTabs'
 
-export {TodoCard, Button, Form, TodoList, NavBar, ReportCard}
+export {TodoCard, Button, Form, TodoList, NavBar, ReportCard, SwitchTabs}

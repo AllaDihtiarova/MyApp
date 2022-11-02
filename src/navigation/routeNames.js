@@ -5,6 +5,9 @@
   BLOG: "/blog",
   CONTACT: "/contact",
   HELP: "/help",
-  REPORT_DETAILS: "/report"
+  REPORT_DETAILS: "/report",
+  ARTICLES: "/articles",
+  AUTHOR: "/author",
+  NEWS: "/news"
   }
  

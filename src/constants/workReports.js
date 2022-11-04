@@ -1,9 +1,11 @@
-export const workWeekes = [
+import { Links } from "./Links";
+
+export const workReports = [
   {
     id: 1,
     title: "Week 1. Work on the Counter and the Card-report",
     date: "Oct 30, 2022",
-    image: "../../image/comp.jpg",
+    image: Links.week1,
     main: "well-pumped props skills, styling optimization",
     description: [
       {

@@ -1,12 +1,11 @@
-import { Links } from '../constants/Links'
 import styles from '../styles/components/ReportCard.module.css'
 
 const ReportCard = (props) => { 
-  const {title, main, date, onSelect} = props
+  const {title, main, date, onSelect, image} = props
   
   return (
     <div className={styles.container}>
-      <img src={Links.week1} className={styles.image} alt="work on the laptop"/>
+      <img src={image} className={styles.image} alt="work on the laptop"/>
       <section className={styles.section}>
         <div className={styles.textContainer}>
           <span className={styles.span}>{ date}</span>

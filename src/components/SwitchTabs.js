@@ -1,20 +1,17 @@
-import { useState } from "react"
-
 import Tab from "./elements/Tab"
 import TabSection from '../components/section/TabSection'
-import { tabs, blogContent} from "../constants"
+import { blogScreens } from "../constants"
 import styles from '../styles/components/SwitchTabs.module.css'
 
-const SwitchTabs = () => {
-  const [activeTab, setActiveTab] = useState(0)
-  const handleTabs = (index) => () => setActiveTab(index)
+const SwitchTabs = (props) => {
+  const {activeTab, handleTabs, onShow} = props
 
   return (
     <div className={styles.container}>
       <div className={styles.section}>
-        {tabs.map((tab, index) => 
+        {blogScreens.map((tab, index) => 
           <Tab 
-            title={tab.text} 
+            title={tab.title} 
             path1={tab.path1} 
             path2={tab.path2} 
             path3={tab.path3} 
@@ -27,9 +24,10 @@ const SwitchTabs = () => {
       </div>
       <div className={styles.line} />
       <TabSection
-        title={blogContent[activeTab].title}
-        text={blogContent[activeTab].text}
-        image={blogContent[activeTab].image}
+        title={blogScreens[activeTab].title}
+        text={blogScreens[activeTab].text}
+        image={blogScreens[activeTab].image}
+        onShow={onShow}
       />      
     </div>  
   )

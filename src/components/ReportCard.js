@@ -1,3 +1,4 @@
+import { Links } from '../constants/Links'
 import styles from '../styles/components/ReportCard.module.css'
 
 const ReportCard = (props) => { 
@@ -5,7 +6,7 @@ const ReportCard = (props) => {
   
   return (
     <div className={styles.container}>
-      <div className={styles.image}></div>
+      <img src={Links.week1} className={styles.image} alt="work on the laptop"/>
       <section className={styles.section}>
         <div className={styles.textContainer}>
           <span className={styles.span}>{ date}</span>

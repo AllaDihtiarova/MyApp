@@ -1,0 +1,39 @@
+.section {
+  display: flex;
+  
+  font-family: "Varta", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.textSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 400px;
+}
+
+.image {
+  margin: 40px 40px 0 40px;
+  width: 450px;
+  height: 300px;
+  background-size: cover;
+}
+
+.title {
+  margin: 40px 0 ;
+  
+  font-size: 30px;
+  font-weight: 700;	
+}
+
+.btn {
+  /* align-self:flex-end; */
+  width: 150px;
+  height: 40px;
+  margin-top: 40px;
+  border: none;
+  border-radius: 25px;  
+  background-color: orange;
+  color: #ffffff;
+}

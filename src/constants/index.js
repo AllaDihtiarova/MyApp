@@ -1,3 +1,5 @@
+import { Links } from "./Links"
+
 export const defaultTodos = [
   {
     id: 1,
@@ -13,7 +15,7 @@ export const defaultTodos = [
   }
 ]
 
-export const defaultTabs = [
+export const tabs = [
   {
     id: 1,
     text: "Author",
@@ -32,4 +34,25 @@ export const defaultTabs = [
     text: "News",
     path1: "M28 8v-4h-28v22c0 1.105 0.895 2 2 2h27c1.657 0 3-1.343 3-3v-17h-4zM26 26h-24v-20h24v20zM4 10h20v2h-20zM16 14h8v2h-8zM16 18h8v2h-8zM16 22h6v2h-6zM4 14h10v10h-10z"
   }
+] 
+
+export const blogContent = [
+  {
+    id: 1,
+    title: "Author",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    image: Links.author
+  },
+  {
+    id: 2,
+    title: "Articles", 
+    text: "ArticlesArticl esArticlesArtic lesArticlesArt iclesArt iclesArt iclesA rticlesArti clesA rticl esArt iclesArt icles Arti clesArticlesArticlesAr ticlesArticles lesArticlesArt lesArticlesArt lesArticlesArt lesArticlesArt lesArticlesArtlesArticlesArt lesArticlesArt",
+    image: Links.article
+  },
+  {
+    id: 3,
+    title: "News",
+    text: "NewsNe wsNewsNewsNe wsNews NewsNewsNe wsNewsNewsNew sNewsNews NewsNewsN ewsNewsN ewsNewsNewsN ewsNewsNews NewsNewsNewsNew sNewsNewsNews ewsNewsNewsNewsNewsNewsNewsNews",
+    image: Links.news
+  },
 ]

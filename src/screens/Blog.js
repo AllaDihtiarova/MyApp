@@ -7,7 +7,7 @@ const Blog = () => {
   const navigate = useNavigate()
 
   const onCards = () => 
-    navigate(routeNames.ARTICLE)
+    navigate(routeNames.ARTICLES)
 
   return (
     <SwitchTabs onSelect={onCards()} />

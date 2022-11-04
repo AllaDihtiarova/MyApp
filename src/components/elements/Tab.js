@@ -1,20 +1,22 @@
 import { Colors } from '../../theme'
 import styles from '../../styles/components/Tab.module.css'
 
-const Tab = ({text, path1, path2, path3, path4, handleActive, isDisabled}) => {
-  const getActiveStyleButton = { backgroundColor: isDisabled ? Colors.orange : Colors.white };
-  const getActiveStyleText = { color: isDisabled ? Colors.white : Colors.black };
-  const getActiveStyleIcon = { fill: isDisabled ? Colors.white : Colors.black };
+const Tab = (props) => {
+  const {title, path1, path2, path3, path4, handleTabs, activeTab, index} = props
+  const getActiveButton = { backgroundColor: (activeTab === index) ? Colors.orange : Colors.white };
+  const getActiveText = { color: (activeTab === index) ? Colors.white : Colors.black };
+  const getActiveIcon = { fill: (activeTab === index) ? Colors.white : Colors.black };
+  
   return (
     <button 
     type="button" 
     className={styles.button} 
-    onClick={handleActive} 
-    style={getActiveStyleButton}
+    onClick={handleTabs} 
+    style={getActiveButton}
     >
       <svg
         className={styles.icon}
-        style={getActiveStyleIcon}
+        style={getActiveIcon}
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 32 32"
       >
@@ -23,7 +25,7 @@ const Tab = ({text, path1, path2, path3, path4, handleActive, isDisabled}) => {
         <path d={path3}></path>
         <path d={path4}></path>
       </svg>
-      <span className={styles.text} style={getActiveStyleText}>{text}</span>
+      <span className={styles.text} style={getActiveText}>{title}</span>
     </button>
   )
 }

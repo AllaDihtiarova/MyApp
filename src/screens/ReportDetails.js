@@ -1,4 +1,5 @@
 import { useLocation } from "react-router-dom";
+import { Links } from "../constants/Links";
 import styles from "../styles/components/ReportDetails.module.css"
 
 const ReportDetails = () => {
@@ -8,7 +9,7 @@ const ReportDetails = () => {
     <div className={styles.container}>
      
           <h5 className={styles.title}>{state.title}</h5>
-          <div className={styles.image}></div>
+          <img src={Links.week1} className={styles.image} alt="work on the laptop"/>
           <div>
             {state.description.map(description =>
               <div>

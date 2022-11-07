@@ -12,10 +12,6 @@ const SwitchTabs = (props) => {
         {blogScreens.map((tab, index) => 
           <Tab 
             title={tab.title} 
-            path1={tab.path1} 
-            path2={tab.path2} 
-            path3={tab.path3} 
-            path4={tab.path4}
             index={index}
             activeTab={activeTab}  
             handleTabs={handleTabs(index)}

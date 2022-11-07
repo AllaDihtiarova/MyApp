@@ -27,8 +27,12 @@
   font-weight: 700;	
 }
 
+.text {
+  width: 1000px;
+  margin-right: 40px;
+}
+
 .btn {
-  /* align-self:flex-end; */
   width: 150px;
   height: 40px;
   margin-top: 40px;

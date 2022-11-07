@@ -7,13 +7,13 @@ const TabSection = (props) => {
     <div className={styles.section}>
         <div className={styles.textSection}>
           <h3 className={styles.title}>{title}</h3>
-          <p>{text}</p>
+          <p className={styles.text}>{text}</p>
           <button type="submit" className={styles.btn} onClick={onShow(title)}>Show details</button>
         </div>
         <img 
           src={image} 
           className={styles.image}
-          alt="icon"
+          alt="icon"        
         /> 
       </div>
   )

@@ -1,5 +1,6 @@
 import Tab from "./elements/Tab"
 import TabSection from '../components/section/TabSection'
+
 import { blogScreens } from "../constants"
 import styles from '../styles/components/SwitchTabs.module.css'
 
@@ -15,8 +16,10 @@ const SwitchTabs = (props) => {
             index={index}
             activeTab={activeTab}  
             handleTabs={handleTabs(index)}
+            icon={tab.icon}
           />) 
         }
+        
       </div>
       <div className={styles.line} />
       <TabSection
@@ -24,7 +27,7 @@ const SwitchTabs = (props) => {
         text={blogScreens[activeTab].text}
         image={blogScreens[activeTab].image}
         onShow={onShow}
-      />      
+      />    
     </div>  
   )
 }

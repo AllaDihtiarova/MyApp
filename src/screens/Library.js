@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Counter } from '../components/Counter';
+import intro from '../constants/intro';
 
 const Library = () => {
   const [counter, setCounter] = useState(0);
@@ -7,13 +8,13 @@ const Library = () => {
 
   const handleCounter = type => () => {
     switch (type) {
-      case 'increment':
+      case intro.INCREMENT:
         return setCounter(counter + 1);
-      case 'decrement':
+      case intro.DECREMENT:
         return setCounter(counter - 1);
-      case 'reset':
+      case intro.RESET:
         return setCounter(0);
-      case 'switch':
+      case intro.SWITCH:
         return setIsDisabled(!isDisabled);
       default:
         return null;

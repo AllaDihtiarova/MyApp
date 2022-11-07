@@ -1,14 +1,14 @@
 import { useLocation } from "react-router-dom";
 import styles from "../styles/components/ReportDetails.module.css"
 
-const ReportDetails = ({image}) => {
+const ReportDetails = () => {
   let {state} = useLocation();
 
   return (
     <div className={styles.container}>
      
           <h5 className={styles.title}>{state.title}</h5>
-          <img src={image} className={styles.image} alt="work on the laptop"/>
+          <img src={state.image} className={styles.image} alt="work on the laptop"/>
           <div>
             {state.description.map(description =>
               <div>

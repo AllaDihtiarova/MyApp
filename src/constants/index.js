@@ -42,3 +42,41 @@ export const blogScreens = [
   }
 ] 
 
+export const aboutScreen = [
+  {
+    id: 1,
+    number: "01",
+    text: "Decision-making identifying results",
+    background: "#f6a99e",
+  },
+  {
+    id: 2,
+    number: "02",
+    text: "Multitasking",
+    background: "#ebe0e6",
+  },
+  {
+    id: 3,
+    number: "03",
+    text: "Time Management",
+    background: "#f6a99e",
+  },
+  {
+    id: 4,
+    number: "04",
+    text: "Goal oriented",
+    background: "#f6a99e",
+  },
+  {
+    id: 5,
+    number: "05",
+    text: "Building rapport with people from diverse backgrounds",
+    background: "#ebe0e6",
+  },
+  {
+    id: 6,
+    number: "06",
+    text: "Flexible and adaptable to new situations",
+    background: "#f6a99e",
+  },
+]

@@ -1,6 +1,20 @@
+import styles from "../styles/components/Author.module.css"
+import {authorScreen} from "../constants/index"
+import AuthorSection from "../components/section/AuthorSection"
+import { SkillCard } from "../components"
+
 const Author = () => {
   return (
-    <h2>Author</h2>
+    <div className={styles.container}> 
+      <AuthorSection/> 
+      <div>
+        <div className={styles.cardSection}>
+          {authorScreen.map(skill => 
+            <SkillCard number={skill.number} text={skill.text} style={skill.background } />
+          )}
+        </div>
+      </div> 
+    </div>
   )
 }
  

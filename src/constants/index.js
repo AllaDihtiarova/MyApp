@@ -42,7 +42,7 @@ export const blogScreens = [
   }
 ] 
 
-export const aboutScreen = [
+export const authorScreen = [
   {
     id: 1,
     number: "01",

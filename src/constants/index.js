@@ -79,4 +79,31 @@ export const authorScreen = [
     text: "Flexible and adaptable to new situations",
     background: "#f6a99e",
   },
+]  
+
+export const libraryCategories = [
+  {
+    id: 1,
+    category: "Form data"
+  },
+  {
+    id: 2,
+    category: "Math Operations"
+  },
+  {
+    id: 3,
+    category: "Modal Group"
+  },
+  {
+    id: 4,
+    category: "Selected Group"
+  },
+  {
+    id: 5,
+    category: "Stylization"
+  },
+  {
+    id: 6,
+    category: "Todos"
+  },
 ]

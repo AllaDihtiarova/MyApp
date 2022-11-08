@@ -8,5 +8,6 @@ import ReportDetails from './ReportDetails';
 import Author from './Author';
 import Articles from './Articles';
 import News from './News';
+import Info from './Info';
 
-export { About, Blog, Contact, Help, Home, Library, ReportDetails, Author, Articles, News };
+export { About, Blog, Contact, Help, Home, Library, ReportDetails, Author, Articles, News, Info };

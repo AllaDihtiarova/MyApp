@@ -1,4 +1,5 @@
 export const Links = {
+  logo: "https://myfirstapp.com/wp-content/uploads/bb-plugin/cache/MyFirstApp_Logo_square_small-square.png",
   week1: "https://kibit.edu.ua/wp-content/uploads/2017/04/post-fd6e0c1391aa5d827aaa094cd0e37bc8.jpg",
   week2: "http://ses.lviv.ua/images/news/2014/79f502e29c.jpg",
   author: "https://klike.net/uploads/posts/2020-02/1582621314_1.jpg",

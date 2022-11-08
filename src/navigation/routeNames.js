@@ -1,5 +1,5 @@
  export default {
-  HOME: "/",
+  HOME: "/home",
   LIBRARY: "/library",
   ABOUT: "/about",
   BLOG: "/blog",
@@ -8,6 +8,7 @@
   REPORT_DETAILS: "/report",
   ARTICLES: "/articles",
   AUTHOR: "/author",
-  NEWS: "/news"
+  NEWS: "/news",
+  INFO: "/info"
   }
  

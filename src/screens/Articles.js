@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom"
 
-import ReportCard from "../components/ReportCard"
+import ReportCard from "../components/cards/ReportCard"
 import { workReports } from "../constants/workReports"
 import routeNames from "../navigation/routeNames"
 

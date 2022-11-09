@@ -1,4 +1,4 @@
-import styles from "../styles/components/Author.module.css"
+import styles from "../styles/screens/Author.module.css"
 import {authorScreen} from "../constants/index"
 import AuthorSection from "../components/section/AuthorSection"
 import { SkillCard } from "../components"

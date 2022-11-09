@@ -20,12 +20,12 @@ export const Counter = props => {
       return Colors.black;
     }
   };
-  const getBackgroundReset = { backgroundColor: isDisabled ? Colors.red : Colors.gray2 };
-  const getBackgroundDecrement = {
+  const getBGReset = { backgroundColor: isDisabled ? Colors.red : Colors.gray2 };
+  const getBGDecrement = {
     backgroundColor: isDisabled ? Colors.gold : Colors.gray2,
   };
 
-  const getBackgroundIncrement = {
+  const getBGIncrement = {
     backgroundColor: isDisabled ? Colors.green : Colors.gray2,
   };
 
@@ -37,7 +37,7 @@ export const Counter = props => {
           disabled={!isDisabled}
           onClick={handleReset}
           className={styles.button}
-          style={getBackgroundReset}
+          style={getBGReset}
         >
           Reset
         </button>
@@ -51,7 +51,7 @@ export const Counter = props => {
           disabled={!isDisabled}
           onClick={handleDecrement}
           className={styles.counter}
-          style={getBackgroundDecrement}
+          style={getBGDecrement}
         >
           -
         </button>
@@ -63,7 +63,7 @@ export const Counter = props => {
           disabled={!isDisabled}
           onClick={handleIncrement}
           className={styles.counter}
-          style={getBackgroundIncrement}
+          style={getBGIncrement}
         >
           +
         </button>

@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import {Counter} from '../../Counter'
-import intro from '../../../constants/intro'
+import {Counter} from '../components/Counter'
+import { counterOperations } from '../constants/intro';
 
 const CounterScreen = () => {
   const [counter, setCounter] = useState(0);
@@ -8,13 +8,13 @@ const CounterScreen = () => {
 
   const handleCounter = type => () => {
     switch (type) {
-      case intro.INCREMENT:
+      case counterOperations.INCREMENT:
         return setCounter(counter + 1);
-      case intro.DECREMENT:
+      case counterOperations.DECREMENT:
         return setCounter(counter - 1);
-      case intro.RESET:
+      case counterOperations.RESET:
         return setCounter(0);
-      case intro.SWITCH:
+      case counterOperations.SWITCH:
         return setIsDisabled(!isDisabled);
       default:
         return null;
@@ -26,10 +26,10 @@ const CounterScreen = () => {
       <Counter
         counter={counter}
         isDisabled={isDisabled}
-        handleIncrement={handleCounter('increment')}
-        handleDecrement={handleCounter('decrement')}
-        handleReset={handleCounter('reset')}
-        handleSwitch={handleCounter('switch')}
+        handleIncrement={handleCounter(counterOperations.INCREMENT)}
+        handleDecrement={handleCounter(counterOperations.DECREMENT)}
+        handleReset={handleCounter(counterOperations.RESET)}
+        handleSwitch={handleCounter(counterOperations.SWITCH)}
       />
     </div>
   );

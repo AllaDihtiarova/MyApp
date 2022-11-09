@@ -1,4 +1,4 @@
-import styles from '../styles/components/ReportCard.module.css'
+import styles from '../../styles/cards/ReportCard.module.css'
 
 const ReportCard = (props) => { 
   const {title, main, date, onSelect, image} = props
@@ -12,7 +12,8 @@ const ReportCard = (props) => {
           <h5 className={styles.h5}>
             {title}
           </h5>
-          <p className={styles.p}>Highlights this week: { main}</p>
+          <p className={styles.p}>Highlights this week:</p>
+          <p className={styles.main}>{main}</p>
         </div>
         <button type="submit" className={styles.btn} onClick={onSelect}>read more</button>                
       </section>

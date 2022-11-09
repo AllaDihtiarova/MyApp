@@ -1,7 +1,8 @@
 import { Links } from "./Links"
-import Article from "../components/assets/icons/Article"
-import Author from "../components/assets/icons/Author"
-import News from "../components/assets/icons/News"
+import Colors from '../theme/Colors'
+import Article from "../assets/icons/Article"
+import Author from "../assets/icons/Author"
+import News from "../assets/icons/News"
 
 export const defaultTodos = [
   {
@@ -47,37 +48,37 @@ export const authorScreen = [
     id: 1,
     number: "01",
     text: "Decision-making identifying results",
-    background: "#f6a99e",
+    background: Colors.lightPink,
   },
   {
     id: 2,
     number: "02",
     text: "Multitasking",
-    background: "#ebe0e6",
+    background: Colors.lightPurple,
   },
   {
     id: 3,
     number: "03",
     text: "Time Management",
-    background: "#f6a99e",
+    background: Colors.lightPink,
   },
   {
     id: 4,
     number: "04",
     text: "Goal oriented",
-    background: "#f6a99e",
+    background: Colors.lightPink,
   },
   {
     id: 5,
     number: "05",
     text: "Building rapport with people from diverse backgrounds",
-    background: "#ebe0e6",
+    background: Colors.lightPurple,
   },
   {
     id: 6,
     number: "06",
     text: "Flexible and adaptable to new situations",
-    background: "#f6a99e",
+    background: Colors.lightPink,
   },
 ]  
 
@@ -105,5 +106,9 @@ export const libraryCategories = [
   {
     id: 6,
     category: "Todos"
+  },
+  {
+    id: 7,
+    category: "Magic"
   },
 ]

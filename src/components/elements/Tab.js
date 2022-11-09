@@ -1,11 +1,10 @@
 import { Colors } from '../../theme'
-import styles from '../../styles/components/Tab.module.css'
+import styles from '../../styles/elements/Tab.module.css'
 
 const Tab = (props) => {
-  const {title, handleTabs, activeTab, index, icon} = props
+  const { title, handleTabs, activeTab, index, icon } = props
+  const activeColor = (activeTab === index) ? Colors.white : Colors.black
   const getActiveButton = { backgroundColor: (activeTab === index) ? Colors.orange : Colors.white };
-  const getActiveText = { color: (activeTab === index) ? Colors.white : Colors.black };
-  const getActiveIcon = { fill: (activeTab === index) ? Colors.white : Colors.black };
 
   return (
     <button 
@@ -14,9 +13,9 @@ const Tab = (props) => {
       onClick={handleTabs} 
       style={getActiveButton}
     >
-      <div className={styles.icon} style={getActiveIcon}>{icon}</div>
+      <div className={styles.icon} style={{fill: activeColor}}>{icon}</div>
       
-      <span className={styles.text} style={getActiveText}>{title}</span>
+      <span className={styles.text} style={{color: activeColor}}>{title}</span>
     </button>
   )
 }

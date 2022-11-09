@@ -1,12 +1,17 @@
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
+import { useState } from 'react'
 
 import styles from '../styles/components/NavBar.module.css'
 
 const NavBar = () => {
+  const [linkActive, setLinkActive] = useState(false)
+  
   
   return (
     <div className={styles.container}>
-      <div className={styles.logo}></div>
+      <Link to="/home">
+        <div className={styles.logo}></div>
+      </Link>
       <div className={styles.linksContainer}>
         <NavLink 
           style={({isActive}) => {

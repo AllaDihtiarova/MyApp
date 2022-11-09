@@ -9,7 +9,7 @@
   border-radius: 14px;
   border: 1px solid rgba(0, 0, 0, 0.3);
   box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.3);
-  
+  font-family: "Varta", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 .image {
@@ -39,7 +39,6 @@
   flex-flow: row wrap;
   margin-bottom: 10px;
 
-  font-family: "Varta", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 18px;
   line-height: 1.6;
   font-weight: 700;	
@@ -63,3 +62,6 @@
   color: #ffffff;
 }
 
+.main {
+  margin-top: 10px;
+}

@@ -9,6 +9,7 @@
   ARTICLES: "/articles",
   AUTHOR: "/author",
   NEWS: "/news",
-  INFO: "/info"
+  INFO: "/info",
+  COUNTER: "/counter"
   }
  

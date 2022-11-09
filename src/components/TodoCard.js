@@ -1,9 +1,10 @@
 import styles from './../styles/components/TodoCard.module.css'
 
-const TodoCard = ({ title, removeTodo, index }) => {
-  
+const TodoCard = (props) => {
+  const { title, removeTodo, style } = props
+
   return (
-    <div style={{ marginTop: (index!==1) && "20px" }} className={styles.container}>
+    <div style={style} className={styles.container}>
       <h2>
         {title}
       </h2>

@@ -9,5 +9,6 @@ import Author from './Author';
 import Articles from './Articles';
 import News from './News';
 import Info from './Info';
+import CounterScreen from './CounterScreen'
 
-export { About, Blog, Contact, Help, Home, Library, ReportDetails, Author, Articles, News, Info };
+export { About, Blog, Contact, Help, Home, Library, ReportDetails, Author, Articles, News, Info, CounterScreen};

@@ -1,5 +1,5 @@
-import intro from "../../constants/intro"
-import styles from "../../styles/components/AuthorSection.module.css"
+import { descriptionTypes } from "../../constants/intro"
+import styles from "../../styles/sections/AuthorSection.module.css"
 
 const AuthorSection = () => {
   return (
@@ -7,7 +7,7 @@ const AuthorSection = () => {
         <div className={styles.image} ></div>
         <div className={styles.textSection}>
           <h2 className={styles.title}>About me</h2>
-          <p>{intro.BIOGRAPHY}</p>
+          <p>{descriptionTypes.BIOGRAPHY}</p>
           <button className={styles.btn}>Learn more</button>
         </div>
       </div>

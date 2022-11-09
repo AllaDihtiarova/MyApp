@@ -1,4 +1,4 @@
-import SeachForm from "../components/SearchForm"
+import SeachForm from '../components/forms/SearchForm'
 
 const Library = () => {
   return (

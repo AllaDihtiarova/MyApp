@@ -1,5 +1,5 @@
 import { useLocation } from "react-router-dom";
-import styles from "../styles/components/ReportDetails.module.css"
+import styles from "../styles/screens/ReportDetails.module.css"
 
 const ReportDetails = () => {
   let {state} = useLocation();
@@ -16,7 +16,7 @@ const ReportDetails = () => {
                 <p className={styles.theme}>{description.theme}</p>
                 <ul className={styles.skill}>Pumped skills:
                   {description.skills.map(skill =>
-                    <li className={styles.skill}>{ skill}</li>)}
+                    <li className={styles.skill}>{ skill.skill}</li>)}
                 </ul>
                 <p className={styles.skill}>
                   The hardest thing was {description.theHeaviest}

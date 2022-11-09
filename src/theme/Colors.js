@@ -44,6 +44,8 @@ const Colors = {
   inputBgLight: 'rgba(64,64,64,0.05)',
   darkGray: '#787777',
   silver: '#C0C0C0',
+  lightPink: "#f6a99e",
+  lightPurple: "#ebe0e6"
 };
 
 export default Colors

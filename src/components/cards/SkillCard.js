@@ -1,4 +1,4 @@
-import styles from "../styles/components/SkillCard.module.css"
+import styles from "../../styles/cards/SkillCard.module.css"
 
 const SkillCard = (props) => {
   const {number, text, style} = props

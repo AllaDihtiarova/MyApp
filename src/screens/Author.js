@@ -1,6 +1,6 @@
 import styles from "../styles/screens/Author.module.css"
 import {authorScreen} from "../constants/index"
-import AuthorSection from "../components/section/AuthorSection"
+import AuthorSection from "../components/sections/AuthorSection"
 import { SkillCard } from "../components"
 
 const Author = () => {

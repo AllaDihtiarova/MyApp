@@ -1,74 +1,29 @@
-import { NavLink, Link } from 'react-router-dom'
-import { useState } from 'react'
+import {Link, NavLink } from 'react-router-dom'
 
 import styles from '../styles/components/NavBar.module.css'
+import { navBarScreens } from '../constants'
+import { Colors } from '../theme'
+import routeNames from '../navigation/routeNames'
 
 const NavBar = () => {
-  const [linkActive, setLinkActive] = useState(false)
-  
-  
+  const styleLink = ({ isActive }) => { return { color: (isActive ? Colors.darkPink : Colors.white) } }
+
   return (
     <div className={styles.container}>
-      <Link to="/home">
+      <Link to={routeNames.HOME}>
         <div className={styles.logo}></div>
       </Link>
       <div className={styles.linksContainer}>
-        <NavLink 
-          style={({isActive}) => {
-            return {
-              color: isActive ? "#e600ac" : "white",
-            }
-          }} 
-          to='/home' 
-          className={styles.linc} 
-        >
-          Home
-        </NavLink>
-        <NavLink 
-          style={({isActive}) => {
-            return {
-              color: isActive ? "#e600ac" : "white",
-            }
-          }} 
-          to='/library' 
-          className={styles.linc } 
-        >
-          Library
-        </NavLink> 
-        <NavLink 
-          style={({isActive}) => {
-            return {
-              color: isActive ? "#e600ac" : "white",
-            }
-          }} 
-          to='/blog' 
-          className={styles.linc} 
-        >
-          Blog
-          </NavLink>
-        <NavLink 
-          style={({isActive}) => {
-            return {
-              color: isActive ? "#e600ac" : "white",
-            }
-          }} 
-          to='/about' 
-          className={styles.linc} 
-        >
-          About
-        </NavLink>      
-        
-        <NavLink 
-          style={({isActive}) => {
-            return {
-              color: isActive ? "#e600ac" : "white",
-            }
-          }} 
-          to='/contact'
-          className={styles.linc} 
-        >
-          Contact
-        </NavLink>
+        {navBarScreens.map(route =>
+          <div className={styles.link}>
+            <NavLink 
+              style={styleLink} 
+              to={route.path}  
+            >
+              {route.name}
+            </NavLink>
+          </div>
+        )}
       </div>
     </div>  
   )

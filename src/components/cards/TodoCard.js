@@ -1,4 +1,4 @@
-import styles from './../styles/components/TodoCard.module.css'
+import styles from '../../styles/components/cards/TodoCard.module.css'
 
 const TodoCard = (props) => {
   const { title, removeTodo, style } = props

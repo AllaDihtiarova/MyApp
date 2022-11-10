@@ -1,4 +1,4 @@
-import styles from '../../styles/sections/TabSection.module.css'
+import styles from '../../styles/components/sections/TabSection.module.css'
 
 const TabSection = (props) => {
   const {title, text, image, onShow} = props

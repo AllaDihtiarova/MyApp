@@ -45,7 +45,8 @@ const Colors = {
   darkGray: '#787777',
   silver: '#C0C0C0',
   lightPink: "#f6a99e",
-  lightPurple: "#ebe0e6"
+  lightPurple: "#ebe0e6",
+  darkPink: "#e600ac"
 };
 
 export default Colors

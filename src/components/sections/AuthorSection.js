@@ -1,5 +1,5 @@
 import { descriptionTypes } from "../../constants/intro"
-import styles from "../../styles/sections/AuthorSection.module.css"
+import styles from "../../styles/components/sections/AuthorSection.module.css"
 
 const AuthorSection = () => {
   return (

@@ -1,5 +1,5 @@
 import Tab from "./elements/Tab"
-import TabSection from '../components/section/TabSection'
+import TabSection from '../components/sections/TabSection'
 
 import { blogScreens } from "../constants"
 import styles from '../styles/components/SwitchTabs.module.css'
@@ -13,10 +13,9 @@ const SwitchTabs = (props) => {
         {blogScreens.map((tab, index) => 
           <Tab 
             title={tab.title} 
-            index={index}
-            activeTab={activeTab}  
-            handleTabs={handleTabs(index)}
             icon={tab.icon}
+            activeTab={activeTab === index}  
+            handleTabs={handleTabs(index)}  
           />) 
         }
         

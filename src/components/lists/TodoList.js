@@ -1,5 +1,5 @@
-import TodoCard from "./TodoCard"
-import styles from "../styles/components/TodoList.module.css"
+import TodoCard from "../cards/TodoCard"
+import styles from "../styles/components/lists/TodoList.module.css"
 
 const TodoList = (props) => {
   const { data, removeTodo } = props

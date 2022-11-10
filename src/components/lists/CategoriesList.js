@@ -1,4 +1,4 @@
-import styles from '../../styles/lists/CategoriesList.module.css'
+import styles from '../../styles/components/lists/CategoriesList.module.css'
 
 const CategoriesList = (props) => {
   const {handleMenu, filterData} = props

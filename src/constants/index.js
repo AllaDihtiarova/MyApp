@@ -3,6 +3,7 @@ import Colors from '../theme/Colors'
 import Article from "../assets/icons/Article"
 import Author from "../assets/icons/Author"
 import News from "../assets/icons/News"
+import routeNames from "../navigation/routeNames"
 
 export const defaultTodos = [
   {
@@ -110,5 +111,33 @@ export const libraryCategories = [
   {
     id: 7,
     category: "Magic"
+  },
+]
+
+export const navBarScreens = [
+  {
+    id: 1,
+    path: routeNames.HOME,
+    name: "Home"
+  },
+  {
+    id: 2,
+    path: routeNames.LIBRARY,
+    name: "Library"
+  },
+  {
+    id: 3,
+    path: routeNames.BLOG,
+    name: "Blog"
+  },
+  {
+    id: 4,
+    path: routeNames.ABOUT,
+    name: "About"
+  },
+  {
+    id: 5,
+    path: routeNames.CONTACT,
+    name: "Contact"
   },
 ]

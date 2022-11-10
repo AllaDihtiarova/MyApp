@@ -1,4 +1,4 @@
-import styles from '../../styles/cards/ReportCard.module.css'
+import styles from '../../styles/components/cards/ReportCard.module.css'
 
 const ReportCard = (props) => { 
   const {title, main, date, onSelect, image} = props

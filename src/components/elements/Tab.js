@@ -1,10 +1,10 @@
 import { Colors } from '../../theme'
-import styles from '../../styles/elements/Tab.module.css'
+import styles from '../../styles/components/elements/Tab.module.css'
 
 const Tab = (props) => {
-  const { title, handleTabs, activeTab, index, icon } = props
-  const activeColor = (activeTab === index) ? Colors.white : Colors.black
-  const getActiveButton = { backgroundColor: (activeTab === index) ? Colors.orange : Colors.white };
+  const { title, handleTabs, activeTab, icon } = props
+  const activeColor = (activeTab) ? Colors.white : Colors.black
+  const getActiveButton = { backgroundColor: (activeTab) ? Colors.orange : Colors.white };
 
   return (
     <button 

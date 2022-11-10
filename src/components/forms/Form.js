@@ -1,5 +1,5 @@
 import Button from '../Button'
-import styles from "../../styles/forms/Form.module.css"
+import styles from "../../styles/components/forms/Form.module.css"
 
 const Form = (props) => {
   const {handleSubmit, value, handleChange} = props

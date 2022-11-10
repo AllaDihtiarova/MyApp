@@ -3,7 +3,7 @@ import { useState } from "react"
 import Search from "../../assets/icons/Search" 
 import { libraryCategories } from '../../constants/index'
 import CategoriesList from "../lists/CategoriesList"
-import styles from "../../styles/forms/SearchForm.module.css"
+import styles from "../../styles/components/forms/SearchForm.module.css"
 
 const SearchForm = () => {
   const [value, setValue] = useState("")

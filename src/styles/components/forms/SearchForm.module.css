@@ -1,28 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+   }
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  height: 1700px;
+  margin: auto;
+  background-image: url("https://kartinkin.net/uploads/posts/2021-04/thumbs/1617597569_12-p-fon-dlya-prezentatsii-derevo-13.jpg");
+  background-size: cover;
+} 
+
+.popularCategoriesSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.shelf {
+  width: 900px;
+  height: 100px;
+  margin: 400px 0 0 100px;
+  background-image: url("../../../assets/images/shelf.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.activeCategory {
+  width: 900px;
+  height: 400px;
+  margin: 40px 100px;
+  background-image: url("https://web-promo.ua/wp-content/uploads/2021/06/gugl-formy-kompyuter.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 14px;
+}
+
+.popularCategories {}
+
+.categoriesSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 400px;
+  height: 650px;
+  margin-right: 100px;
+  padding: 20px; 
+}
+
 .sectionInput {
   position: relative;
-  margin: 20px 0;
   padding: 0 20px;
   height: 50px;
-  width: 500px;
+  width: 300px;
 }
 
 .input {
   height: 50px;
-  width: 500px;
-  border: 1px solid darkgray;
+  width: 300px;
+  margin-top: 20px;
+  padding-left: 20px;
+  border: none;
   border-radius: 14px;
-  background-color: lightgrey;
-  color: palevioletred;
-  font-weight: 700;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), #4c0080);
+  color: #DCDCDC;
+  font-weight: 400;
   font-size: 18px;
 }
 
 .icon {
   position: absolute;
-  top: 14px;
+  top: 20px;
   right: 0;
-  width: 50px;
-  height: 50px;
+  padding: 10px;
+  width: 30px;
+  height: 30px;
+  border-top-right-radius: 14px;
+  border-bottom-right-radius: 14px;
   background-size: cover;
+  background-color: black;
+  color: #D3D3D3
 }
 
+.title {
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #800080;
+}
+
+ .listContainer {
+  margin-right: 100px;
+  margin-top: 40px;
+ }

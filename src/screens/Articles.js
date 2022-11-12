@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom"
 import ReportCard from "../components/cards/ReportCard"
 import { workReports } from "../constants/workReports"
 import routeNames from "../navigation/routeNames"
+import styles from '../styles/screens/Articles.module.css'
 
 const Articles = () => {  
   const navigate = useNavigate()
@@ -10,13 +11,13 @@ const Articles = () => {
   const onSelect = (report)=> () => navigate(routeNames.REPORT_DETAILS, {state: report})
 
   return (
-    <div>
+    <div className={styles.container}>
       {workReports.map(report =>
         <ReportCard {...report}
         onSelect={onSelect(report)}
       />
       )}
-    </div>
+    </div>  
   )
 }
  

@@ -86,31 +86,61 @@ export const authorScreen = [
 export const libraryCategories = [
   {
     id: 1,
-    category: "Form data"
+    category: "Form data",
+    subcategorys: []
   },
   {
     id: 2,
-    category: "Math Operations"
+    category: "Math Operations",
+    subcategorys: [{
+      id: 1,
+      name: "Counter"
+    }]
   },
   {
     id: 3,
-    category: "Modal Group"
+    category: "Modal Group",
+    subcategorys: []
   },
   {
     id: 4,
-    category: "Selected Group"
+    category: "Selected Group",
+    subcategorys: []
   },
   {
     id: 5,
-    category: "Stylization"
+    category: "Stylization",
+    subcategorys: []
   },
   {
     id: 6,
-    category: "Todos"
+    category: "Todos",
+    subcategorys: []
   },
   {
     id: 7,
-    category: "Magic"
+    category: "Magic",
+    subcategorys: []
+  },
+  {
+    id: 8,
+    category: "Magic 8",
+    subcategorys: []
+  },
+  {
+    id: 9,
+    category: "Magic 9",
+    subcategorys: []
+  },
+  {
+    id: 10,
+    category: "Magic 10",
+    subcategorys: []
+  },
+  {
+    id: 11,
+    category: "Magic 11",
+    subcategorys: []
   },
 ]
 

@@ -1,16 +1,25 @@
+import Menu from '../../assets/icons/Menu'
 import styles from '../../styles/components/lists/CategoriesList.module.css'
 
 const CategoriesList = (props) => {
-  const {handleMenu, filterData} = props
+  const {data, activeCategory, onClick} = props
 
   return (
-    <ul>
-        {filterData.map(category =>
-          <li className={styles.category}>
-            <div onClick={handleMenu}>{category.category}</div>
-          </li>)
+    <div>
+        {data.map(category =>
+          <div className={styles.category} onClick={onClick}>
+            <div className={styles.icon} >
+              <Menu/>
+            </div>
+            <div >
+              {category.category}
+              {category.subcategorys.map((subcategory, index) =>
+                (index === activeCategory) ? <div>{ subcategory.name}</div> : null
+                )}
+            </div>
+          </div>)
         }
-      </ul>
+      </div>
   )
 }
 

@@ -215,5 +215,120 @@ export const workReports = [
         theHeaviest: "using huk useLocation and report"
       }
     ]
-  }
+  },
+  {
+    id: 3,
+    title: "Week 3. Work with the author page and getting started with the categories page",
+    date: "Nov 1, 2022",
+    image: Links.week3,
+    main: "positioning in css, operator if...else...",
+    description: [
+      {
+        weekDay: "Monday",
+        theme: "Screen navigation",
+        skills: [{
+            id:1,
+            skill: "props"
+          },
+          {
+            id:2,
+            skill: "refactoring styles"
+          },
+          {
+            id:3,
+            skill: "working with the icon library"
+          }
+        ],
+        theHeaviest: "colors of icon"
+      },
+      {
+        weekDay: "Tuesday",
+        theme: "Refactoring NavBar",
+        skills: [
+          {
+            id:1,
+            skill: "active tab"
+          },
+          {
+            id: 2,
+            skill: "element animation"
+          },
+          {
+            id: 3,
+            skill: "logo activation"
+          },
+          {
+            id: 4,
+            skill: "work with colors library"
+          }
+        ],
+        theHeaviest: "element animation"
+      },
+      {
+        weekDay: "Wednesday",
+        theme: "Avtor screen",
+        skills: [
+          {
+            id: 1,
+            skill: "elements position"
+          },
+          {
+            id: 2,
+            skill: "flex"
+          }
+        ],
+        theHeaviest: "elements position"
+      },
+      {
+        weekDay: "Thursday",
+        theme: "Refactoring App",
+        skills: [
+          {
+            id: 1,
+            skill: "site structure"
+          },
+          {
+            id: 2,
+            skill: "styles"
+          },
+          {
+            id: 3,
+            skill: "bringing logic out of the component"
+          }
+        ],
+        theHeaviest: "bringing logic out of the component"
+      },
+      {
+        weekDay: "Friday",
+        theme: "Categories page",
+        skills: [
+          {
+            id: 1,
+            skill: "search input"
+          },
+          {
+            id: 2,
+            skill: "map categories"
+          },
+          {
+            id: 3,
+            skill: "styles"
+          },
+          {
+            id: 4,
+            skill: "transparent background in pictures"
+          },
+          {
+            id: 5,
+            skill: "themes"
+          },
+          {
+            id: 6,
+            skill: "report"
+          }
+        ],
+        theHeaviest: "colors themes"
+      }
+    ]
+  },
 ]

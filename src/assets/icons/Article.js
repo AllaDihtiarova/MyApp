@@ -1,4 +1,4 @@
-const Article = () => {
+export const Article = () => {
   
   return (
     <svg  xmlns="http://www.w3.org/2000/svg" >
@@ -7,5 +7,3 @@ const Article = () => {
 
   )    
 }
-
-export default Article

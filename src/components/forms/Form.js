@@ -1,7 +1,8 @@
-import Button from '../Button'
+import Button from '../buttons/Button'
 import styles from "../../styles/components/forms/Form.module.css"
+import { buttonStyles } from '../../constants/intro'
 
-const Form = (props) => {
+const Form = (props ) => {
   const {handleSubmit, value, handleChange} = props
 
   return (
@@ -15,9 +16,10 @@ const Form = (props) => {
           className={styles.input}
           onChange={handleChange}
         />
-        <Button />
+        <Button type={buttonStyles.SECONDARY} title="Sabmit"/>
       </form>
     </div>
   )  
 }
+
 export default Form

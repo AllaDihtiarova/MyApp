@@ -1,7 +1,7 @@
 import styles from '../styles/components/Counter.module.css';
 import { Colors } from '../theme';
 
-export const Counter = props => {
+const Counter = props => {
   const {
     counter,
     isDisabled,
@@ -11,23 +11,23 @@ export const Counter = props => {
     handleSwitch,
   } = props;
 
-  const getColor = () => {
-    if (counter > 0) {
-      return Colors.green;
-    } else if (counter < 0) {
-      return Colors.red;
+  const {increment, decrement, reset} = (() => {
+    if(isDisabled) {
+      return {increment: Colors.green, decrement: Colors.gold, reset: Colors.red}
     } else {
-      return Colors.black;
+      return {increment: Colors.gray2, decrement: Colors.gray2, reset: Colors.gray2}
     }
-  };
-  const getBGReset = { backgroundColor: isDisabled ? Colors.red : Colors.gray2 };
-  const getBGDecrement = {
-    backgroundColor: isDisabled ? Colors.gold : Colors.gray2,
-  };
+  })()
 
-  const getBGIncrement = {
-    backgroundColor: isDisabled ? Colors.green : Colors.gray2,
-  };
+  const {color} = (() => {
+    if(counter > 0) {
+      return {color: Colors.green}
+    } else if (counter < 0) {
+      return {color: Colors.red}
+    } else {
+      return {color: Colors.black}
+    }
+  })()
 
   return (
     <div className={styles.borderContainer}>
@@ -37,7 +37,7 @@ export const Counter = props => {
           disabled={!isDisabled}
           onClick={handleReset}
           className={styles.button}
-          style={getBGReset}
+          style={{backgroundColor: reset}}
         >
           Reset
         </button>
@@ -51,11 +51,11 @@ export const Counter = props => {
           disabled={!isDisabled}
           onClick={handleDecrement}
           className={styles.counter}
-          style={getBGDecrement}
+          style={{backgroundColor: decrement}}
         >
           -
         </button>
-        <div className={styles.counter} style={{ color: getColor() }}>
+        <div className={styles.counter} style={{ color: color }}>
           {counter}
         </div>
         <button
@@ -63,7 +63,7 @@ export const Counter = props => {
           disabled={!isDisabled}
           onClick={handleIncrement}
           className={styles.counter}
-          style={getBGIncrement}
+          style={{backgroundColor: increment}}
         >
           +
         </button>
@@ -71,3 +71,5 @@ export const Counter = props => {
     </div>
   );
 };
+
+export default Counter

@@ -331,4 +331,99 @@ export const workReports = [
       }
     ]
   },
+  {
+    id: 4,
+    title: "Week 4. Work with search form",
+    date: "Nov 18, 2022",
+    image: Links.week4,
+    main: "",
+    description: [
+      {
+        weekDay: "Monday",
+        theme: "Counter",
+        skills: [{
+            id:1,
+            skill: "props"
+          },
+          {
+            id:2,
+            skill: "handler"
+          }
+        ],
+        theHeaviest: "switch"
+      },
+      {
+        weekDay: "Tuesday",
+        theme: "Counter",
+        skills: [
+          {
+            id:1,
+            skill: "props"
+          },
+          {
+            id: 2,
+            skill: "styles"
+          }
+        ],
+        theHeaviest: "style refactoring"
+      },
+      {
+        weekDay: "Wednesday",
+        theme: "Navigation Bar",
+        skills: [
+          {
+            id: 1,
+            skill: "Links"
+          },
+          {
+            id: 2,
+            skill: "styles"
+          }
+        ],
+        theHeaviest: "connection of links"
+      },
+      {
+        weekDay: "Thursday",
+        theme: "Report Card",
+        skills: [
+          {
+            id: 1,
+            skill: "props"
+          },
+          {
+            id: 2,
+            skill: "handler"
+          },
+          {
+            id: 3,
+            skill: "styles"
+          },
+          {
+            id: 4,
+            skill: "image"
+          }
+        ],
+        theHeaviest: "connection of images"
+      },
+      {
+        weekDay: "Friday",
+        theme: "Report Details",
+        skills: [
+          {
+            id: 1,
+            skill: "props"
+          },
+          {
+            id: 2,
+            skill: "handler"
+          },
+          {
+            id: 3,
+            skill: "styles"
+          }
+        ],
+        theHeaviest: "report"
+      }
+    ]
+  },
 ]

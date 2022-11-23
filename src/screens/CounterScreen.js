@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import {Counter} from '../components/Counter'
+import { Counter } from '../components';
 import { counterOperations } from '../constants/intro';
 
 const CounterScreen = () => {

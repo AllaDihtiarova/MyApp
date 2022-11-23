@@ -10,5 +10,6 @@ import Articles from './Articles';
 import News from './News';
 import Info from './Info';
 import CounterScreen from './CounterScreen'
+import { FormScreen } from './FormScreen';
 
-export { About, Blog, Contact, Help, Home, Library, ReportDetails, Author, Articles, News, Info, CounterScreen};
+export { About, Blog, Contact, Help, Home, Library, ReportDetails, Author, Articles, News, Info, CounterScreen, FormScreen};

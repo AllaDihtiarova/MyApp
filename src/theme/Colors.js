@@ -3,7 +3,7 @@ const Colors = {
   primaryLight: '#F29493',
   coral: '#FF7F50',
   hotPink: '#FF69B4',
-  red: '#FF0000',
+  red: '#D40000',
   pink: '#B42E61',
   secondary: '#4C5053',
   gray: '#E9E9E9',
@@ -11,11 +11,11 @@ const Colors = {
   gray3: '#757575',
   gray4: '#F2F2F2',
   gray5: '#404040',
-  gray6: '#D6D6D6',
+  gray6: '#D3D3D5',
   gray7: '#8F8F8F',
   gray8: '#535659',
   gray9: '#3F3F3F',
-  gray10: '#AFB1B2',
+  gray10: '#A7A7AA',
   gray11: '#585F68',
   white: '#FFFFFF',
   bisque: '#FFE4C4',
@@ -46,7 +46,9 @@ const Colors = {
   silver: '#C0C0C0',
   lightPink: "#f6a99e",
   lightPurple: "#ebe0e6",
-  darkPink: "#e600ac"
+  darkPink: "#e600ac", 
+  violet: "#8048F7",
+  mint: "#00E8B0"
 };
 
 export default Colors

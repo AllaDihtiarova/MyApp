@@ -1,25 +1,27 @@
-import Menu from '../../assets/icons/Menu'
+import CategorySection from '../sections/CategorySection'
 import styles from '../../styles/components/lists/CategoriesList.module.css'
 
 const CategoriesList = (props) => {
-  const {data, activeCategory, onClick} = props
-
-  return (
+  const { data, onSelect } = props
+ 
+  return (   
     <div>
-        {data.map(category =>
-          <div className={styles.category} onClick={onClick}>
-            <div className={styles.icon} >
-              <Menu/>
-            </div>
-            <div >
-              {category.category}
-              {category.subcategorys.map((subcategory, index) =>
-                (index === activeCategory) ? <div>{ subcategory.name}</div> : null
-                )}
-            </div>
+      {data.length > 0 ? (
+        <>  
+        {data.map(category => 
+          <div key={category.id} >            
+            <CategorySection onSelect={onSelect} data={ category} />
           </div>)
         }
-      </div>
+      </> 
+      ) : 
+      <>
+        <p className={styles.p}>You have no categories.</p>
+        <div className={styles.image}/>
+      </>
+    }
+    
+    </div>  
   )
 }
 

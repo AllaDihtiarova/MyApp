@@ -10,6 +10,7 @@
   AUTHOR: "/author",
   NEWS: "/news",
   INFO: "/info",
-  COUNTER: "/counter"
+  COUNTER: "/counter",
+  FORM: "/form"
   }
  

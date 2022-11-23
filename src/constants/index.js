@@ -1,22 +1,83 @@
 import { Links } from "./Links"
 import Colors from '../theme/Colors'
-import Article from "../assets/icons/Article"
-import Author from "../assets/icons/Author"
-import News from "../assets/icons/News"
+import { Article, Author, News } from "../assets/icons"
 import routeNames from "../navigation/routeNames"
 
 export const defaultTodos = [
   {
-    id: 1,
-    title: "Card1"
-  },
-  {
     id: 2,
-    title: "Card2"
+    product: "Meat",
+    shop: "Перший м'ясний"
   },
   {
     id: 3,
-    title: "Card3"
+    product: "Sausage",
+    shop: "Ковбасні традиції"
+  },
+  {
+    id: 4,
+    product: "Cheese",
+    shop: "Сирний сомельє"
+  },
+  {
+    id: 5,
+    product: "Butter",
+    shop: "Молочний двір"
+  },
+  {
+    id: 6,
+    product: "Milk",
+    shop: "Молочний двір"
+  },
+  {
+    id: 7,
+    product: "Tea",
+    shop: "Магазин Чай-Кава"
+  },
+  {
+    id: 8,
+    product: "Coffee",
+    shop: "Магазин Чай-Кава"
+  },
+  {
+    id: 9,
+    product: "Sugar",
+    shop: "Сільпо"
+  },
+  {
+    id: 10,
+    product: "Pasta",
+    shop: "Сільпо"
+  },
+  {
+    id: 11,
+    product: "Bread",
+    shop: "Сільпо"
+  },
+  {
+    id: 12,
+    product: "Pea",
+    shop: "Сільпо"
+  },
+  {
+    id: 13,
+    product: "Fish",
+    shop: "Дари моря"
+  },
+  {
+    id: 14,
+    product: "Oil",
+    shop: "Сільпо"
+  },
+  {
+    id: 15,
+    product: "Flour",
+    shop: "Сільпо"
+  },
+  {
+    id: 16,
+    product: "Vegetables",
+    shop: "Фермерський базар"
   }
 ]
 
@@ -87,60 +148,78 @@ export const libraryCategories = [
   {
     id: 1,
     category: "Form data",
-    subcategorys: []
+    subcategories: [
+      {
+      id: 1,
+      name: "Form",
+      path: routeNames.FORM
+    }
+    ],
+    image: "https://web-promo.ua/wp-content/uploads/2021/06/gugl-formy-kompyuter.png"
   },
   {
     id: 2,
-    category: "Math Operations",
-    subcategorys: [{
+    category: "Math operations",
+    subcategories: [{
       id: 1,
-      name: "Counter"
-    }]
+      name: "Counter",
+      path: routeNames.COUNTER
+    }],
+    image: "../assets/images/mathOperations.jpg"
   },
   {
     id: 3,
-    category: "Modal Group",
-    subcategorys: []
+    category: "Modal group",
+    subcategories: [],
+    image: "../assets/images/modal.jpg"
   },
   {
     id: 4,
-    category: "Selected Group",
-    subcategorys: []
+    category: "Selected group",
+    subcategories: [],
+    image: ""
   },
   {
     id: 5,
     category: "Stylization",
-    subcategorys: []
+    subcategories: [],
+    image: ""
   },
   {
     id: 6,
     category: "Todos",
-    subcategorys: []
+    subcategories: [],
+    image: ""
   },
   {
     id: 7,
     category: "Magic",
-    subcategorys: []
+    subcategories: [],
+    image: ""
   },
   {
     id: 8,
     category: "Magic 8",
-    subcategorys: []
+    subcategories: [],
+    image: ""
   },
   {
     id: 9,
     category: "Magic 9",
-    subcategorys: []
+    subcategories: [],
+    image: ""
   },
   {
     id: 10,
     category: "Magic 10",
-    subcategorys: []
+    subcategories: [],
+    image: ""
   },
   {
     id: 11,
     category: "Magic 11",
-    subcategorys: []
+    subcategories: [],
+    image: ""
   },
 ]
 
@@ -170,4 +249,19 @@ export const navBarScreens = [
     path: routeNames.CONTACT,
     name: "Contact"
   },
+]
+
+export const selectMenu = [
+  {
+    id: 1,
+    name: "All"
+  },
+  {
+    id: 2,
+    name: "Products"
+  },
+  {
+    id: 1,
+    name: "Shops"
+  }
 ]

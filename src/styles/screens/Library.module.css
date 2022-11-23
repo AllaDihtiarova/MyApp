@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+ }
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.title {
+  position: absolute;
+  margin: 110px 300px 0 0;
+  font-size: 28px;
+  color: #4c0080;
+}
+
+.listContainer {
+  position: absolute;
+  margin: 150px 220px 0 0;
+  width: 220px;
+ }
+
+ .btn {
+  position: absolute;
+  margin: 540px 120px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 40px;
+  border: none;
+  border-radius: 14px;   
+ }
+
+ .hide::before {
+   content: '+';
+
+ }
+
+ .rotate {
+  transform: rotate(90deg);
+}

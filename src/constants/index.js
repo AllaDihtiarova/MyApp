@@ -7,77 +7,77 @@ export const defaultTodos = [
   {
     id: 2,
     product: "Meat",
-    shop: "Перший м'ясний"
+    shop: "The first is meat"
   },
   {
     id: 3,
     product: "Sausage",
-    shop: "Ковбасні традиції"
+    shop: "Sausage traditions"
   },
   {
     id: 4,
     product: "Cheese",
-    shop: "Сирний сомельє"
+    shop: "Cheese sommelier"
   },
   {
     id: 5,
     product: "Butter",
-    shop: "Молочний двір"
+    shop: "Milk yard" 
   },
   {
     id: 6,
     product: "Milk",
-    shop: "Молочний двір"
+    shop: "Milk yard"
   },
   {
     id: 7,
     product: "Tea",
-    shop: "Магазин Чай-Кава"
+    shop: "Tea-Coffee shop"
   },
   {
     id: 8,
     product: "Coffee",
-    shop: "Магазин Чай-Кава"
+    shop: "Tea-Coffee shop"
   },
   {
     id: 9,
     product: "Sugar",
-    shop: "Сільпо"
+    shop: "Silpo"
   },
   {
     id: 10,
     product: "Pasta",
-    shop: "Сільпо"
+    shop: "Silpo"
   },
   {
     id: 11,
     product: "Bread",
-    shop: "Сільпо"
+    shop: "Silpo"
   },
   {
     id: 12,
     product: "Pea",
-    shop: "Сільпо"
+    shop: "Silpo"
   },
   {
     id: 13,
     product: "Fish",
-    shop: "Дари моря"
+    shop: "Gifts of the sea"
   },
   {
     id: 14,
     product: "Oil",
-    shop: "Сільпо"
+    shop: "Silpo"
   },
   {
     id: 15,
     product: "Flour",
-    shop: "Сільпо"
+    shop: "Silpo"
   },
   {
     id: 16,
     product: "Vegetables",
-    shop: "Фермерський базар"
+    shop: "Farmer's market"
   }
 ]
 
@@ -148,13 +148,7 @@ export const libraryCategories = [
   {
     id: 1,
     category: "Form data",
-    subcategories: [
-      {
-      id: 1,
-      name: "Form",
-      path: routeNames.FORM
-    }
-    ],
+    subcategories: [],
     image: "https://web-promo.ua/wp-content/uploads/2021/06/gugl-formy-kompyuter.png"
   },
   {
@@ -188,7 +182,13 @@ export const libraryCategories = [
   {
     id: 6,
     category: "Todos",
-    subcategories: [],
+    subcategories: [
+       {
+      id: 1,
+      name: "PurchaseList",
+      path: routeNames.PURCHASE
+    }
+    ],
     image: ""
   },
   {

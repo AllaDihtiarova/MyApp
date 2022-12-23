@@ -1,3 +1,5 @@
+import Button from '../buttons/Button'
+import { buttonStyles } from '../../constants/intro'
 import styles from '../../styles/components/cards/ReportCard.module.css'
 
 const ReportCard = (props) => { 
@@ -15,7 +17,7 @@ const ReportCard = (props) => {
           <p className={styles.p}>Highlights this week:</p>
           <p className={styles.main}>{main}</p>
         </div>
-        <button type="submit" className={styles.btn} onClick={onSelect}>read more</button>                
+        <Button type={buttonStyles.SECONDARY} title='read more' onClick={onSelect}/>
       </section>
     </div>  
   )

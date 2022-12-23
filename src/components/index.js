@@ -4,7 +4,7 @@ import ReportCard from './cards/ReportCard'
 import SkillCard from './cards/SkillCard'
 import TodoCard from './cards/TodoCard'
 import Tab from './elements/Tab'
-import Modal from './elements/Modal'
+import FilterModal from './elements/FilterModal'
 import Form from './forms/Form'
 import SearchForm from './forms/SearchForm'
 import SelectForm from './forms/SelectForm'
@@ -16,5 +16,15 @@ import TabSection from './sections/TabSection'
 import NavBar from './NavBar'
 import SwitchTabs from './SwitchTabs'
 import Counter from './Counter'
+import Input from './elements/Input'
+import Label from './elements/Label'
+import Error from './elements/Error'
+import DefaultImage from './elements/DefaultImage'
+import IconButton from './buttons/IconButton'
 
-export {Button, MoreButton, TodoCard, Tab, Modal, SearchForm, SelectForm, CategoriesList, TodoList, SelectList, AuthorSection, TabSection, Form, NavBar, ReportCard, SwitchTabs, SkillCard, Counter}
+export {
+  Button, MoreButton, TodoCard, Tab, FilterModal, SearchForm, SelectForm,
+  CategoriesList, TodoList, SelectList, AuthorSection, TabSection, Form, NavBar,
+  ReportCard, SwitchTabs, SkillCard, Counter, Input, Label, Error, DefaultImage,
+  IconButton
+}

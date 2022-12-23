@@ -1,6 +1,6 @@
 .container {
   display: flex;
-  flex-flow: wrap;
+  flex-wrap: wrap;
   overflow: hidden;
   width: 450px;
   height: 690px;
@@ -49,16 +49,6 @@
   line-height: 1.6;
   font-weight: 400;	
   color: #757C7F;
-}
-
-.btn {
-  width: 125px;
-  height: 40px;
-
-  border: none;
-  border-radius: 5px;  
-  background-color: #58acaf;
-  color: #ffffff;
 }
 
 .main {

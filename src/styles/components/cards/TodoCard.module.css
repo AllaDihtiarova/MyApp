@@ -1,15 +1,16 @@
 .container {
   display: flex;
   justify-content: space-between;
-  height: 150px;
-  width: 150px;
+  align-items: center;
+  height: 30px;
+  width: 300px;
+  margin: 0 20px 0 0;
+  padding: 10px;
   border: 2px solid #00E8B0;
   border-radius: 14px;
   background-color: white;
-  color: black;
   font-weight: 700;
   font-style: italic;
-  text-align: center;
 }
 
 .button {
@@ -18,8 +19,8 @@
   align-items: center;
   height: 20px;
   width: 20px;
-  margin: 10px 10px 0 0;
   color: red;
+  font-size: 10px;
   font-weight: 700;
   border: 2px solid black;
   border-radius: 50%;
@@ -28,9 +29,22 @@
 .textContainer {
   display: flex;
   flex-direction: column;
-  width: 100px;  
+  width: 200px;
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
 }
 
-.product {
-  margin: 20px 0 20px 0; 
+.name {
+  align-self: flex-start;
+  white-space: pre-line;
+}
+
+.check {
+  width: 20px;
+  height: 20px;
+  color: white;
 }

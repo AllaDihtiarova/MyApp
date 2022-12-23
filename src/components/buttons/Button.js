@@ -1,9 +1,9 @@
 import styles from "../../styles/components/buttons/Button.module.css"
 import { Colors } from "../../theme"
-import { buttonStyles } from "../../constants/intro"
+import { buttonSize, buttonStyles } from "../../constants/intro"
 
 const Button = (props) => {
-  const {type, disabled, title, onClick} = props 
+  const {type, disabled, title, onClick, size} = props 
   
   const themeStyle = (() => {
     if(disabled) {
@@ -21,9 +21,22 @@ const Button = (props) => {
     }  
   })()
 
+  const themeSize = (() => {
+    switch (size) {
+      case buttonSize.SMALL:
+        return { width: "80px", height: "30px" };
+      case buttonSize.MEDIUM: 
+        return { width: "130px", height: "40px" };
+      case buttonSize.BIG: 
+        return { width: "200px", height: "50px" };
+      default:
+        return { width: "130px", height: "40px" };
+    }
+  })()
+
   return (
     <button disabled={disabled} className={styles.container} style={themeStyle} onClick={onClick}>
-      <p className={styles.text} style={themeStyle}>{title }</p>
+      <p className={styles.text} >{title }</p>
     </button>
   )
 }

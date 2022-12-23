@@ -16,27 +16,25 @@ const CategorySection = (props) => {
   return (
     <div className={styles.category}>
       <div className={styles.icon} >
-              <Menu style={transformStyle} />  
-            </div>
-   <div onClick={onShow}>
-              <span>
-                {category}
+        <Menu style={transformStyle} />  
+      </div>
+      <div onClick={onShow}>
+        <span>
+          {category}
         </span>
-        
         {isShow ? (
           <div>
-          { subcategories.map((subcategory) =>
-                <div onClick={onSelect(subcategory.path)} className={styles.subcategory}>
-                  <span>
-                    {subcategory.name}
-                  </span>
-                </div>  
+            { subcategories.map((subcategory) =>
+              <div key={subcategory.id} onClick={onSelect(subcategory.path)} className={styles.subcategory}>
+                <span>
+                  {subcategory.name}
+                </span>
+              </div>  
             )}
-            </div>
-            ) : null}
-              
+          </div>
+        ) : null}       
       </div>
-      </div>
+    </div>
   )
 }
 

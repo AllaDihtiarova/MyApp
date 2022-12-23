@@ -10,6 +10,11 @@ import Articles from './Articles';
 import News from './News';
 import Info from './Info';
 import CounterScreen from './CounterScreen'
-import { FormScreen } from './FormScreen';
+import PurchaseList from './PurchaseList';
+import AllCategories from './AllCategories';
+import NotFound from './NotFound';
 
-export { About, Blog, Contact, Help, Home, Library, ReportDetails, Author, Articles, News, Info, CounterScreen, FormScreen};
+export {
+  About, Blog, Contact, Help, Home, Library, ReportDetails, Author, Articles,
+  News, Info, CounterScreen, PurchaseList, AllCategories, NotFound
+};

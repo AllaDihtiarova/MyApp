@@ -1,23 +1,25 @@
+import Input from '../elements/Input'
 import Button from '../buttons/Button'
-import styles from "../../styles/components/forms/Form.module.css"
 import { buttonStyles } from '../../constants/intro'
+import styles from "../../styles/components/forms/Form.module.css"
 
 const Form = (props ) => {
-  const {handleSubmit, value, handleChange} = props
-
+  const { handleSubmit, product, shop, handleChangeProduct, handleChangeShop } = props
+  
   return (
     <div className={styles.container}>
       <form
         className={styles.form}
-        onSubmit={handleSubmit}>
-        <input
-          type="text"
-          value={value}
-          className={styles.input}
-          onChange={handleChange}
-        />
-        <Button type={buttonStyles.SECONDARY} title="Sabmit"/>
-      </form>
+        onSubmit={handleSubmit}
+      >
+        <div className={styles.containerInput}>
+          <Input handleSubmit={handleSubmit} value={product} handleChange={handleChangeProduct } label="Product:"/>
+          <Input handleSubmit={handleSubmit} value={shop} handleChange={handleChangeShop } label="Shop:"/>
+        </div> 
+        <div className={styles.containerButton}>
+          <Button type={buttonStyles.SECONDARY} title="Submit" />
+        </div>
+      </form>  
     </div>
   )  
 }

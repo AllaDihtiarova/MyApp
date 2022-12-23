@@ -1,5 +1,5 @@
 import CategorySection from '../sections/CategorySection'
-import styles from '../../styles/components/lists/CategoriesList.module.css'
+import DefaultImage from '../elements/DefaultImage'
 
 const CategoriesList = (props) => {
   const { data, onSelect } = props
@@ -8,19 +8,15 @@ const CategoriesList = (props) => {
     <div>
       {data.length > 0 ? (
         <>  
-        {data.map(category => 
-          <div key={category.id} >            
-            <CategorySection onSelect={onSelect} data={ category} />
+        {data.map(name => 
+          <div key={name.id} >            
+            <CategorySection onSelect={onSelect} data={ name} />
           </div>)
         }
       </> 
       ) : 
-      <>
-        <p className={styles.p}>You have no categories.</p>
-        <div className={styles.image}/>
-      </>
+      <DefaultImage text="You have no categories."/>
     }
-    
     </div>  
   )
 }

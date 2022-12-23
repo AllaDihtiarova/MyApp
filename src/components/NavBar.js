@@ -15,7 +15,7 @@ const NavBar = () => {
       </Link>
       <div className={styles.linksContainer}>
         {navBarScreens.map(route =>
-          <div >
+          <div key={route.id}>
             <NavLink 
             className={styles.link}
               style={styleLink} 

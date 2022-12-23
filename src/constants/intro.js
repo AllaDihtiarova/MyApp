@@ -21,3 +21,9 @@ export const buttonStyles = {
   DANGER: "danger",
   SECONDARY: "secondary"
 }
+
+export const buttonSize = {
+  SMALL: "small",
+  MEDIUM: "medium",
+  BIG: "big"
+}

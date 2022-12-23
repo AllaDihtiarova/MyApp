@@ -219,7 +219,7 @@ export const workReports = [
   {
     id: 3,
     title: "Week 3. Work with the author page and getting started with the categories page",
-    date: "Nov 1, 2022",
+    date: "Nov 13, 2022",
     image: Links.week3,
     main: "positioning in css, operator if...else...",
     description: [
@@ -426,4 +426,181 @@ export const workReports = [
       }
     ]
   },
+  {
+    id: 5,
+    title: "Week 5. Work on the Counter and the Card-report",
+    date: "Nov 25, 2022",
+    image: "../assets/images/week5.jpg",
+    main: "well-pumped props skills, styling optimization",
+    description: [
+      {
+        weekDay: "Monday",
+        theme: "Counter",
+        skills: [{
+            id:1,
+            skill: "props"
+          },
+          {
+            id:2,
+            skill: "handler"
+          }
+        ],
+        theHeaviest: "switch"
+      },
+      {
+        weekDay: "Tuesday",
+        theme: "Counter",
+        skills: [
+          {
+            id:1,
+            skill: "props"
+          },
+          {
+            id: 2,
+            skill: "styles"
+          }
+        ],
+        theHeaviest: "style refactoring"
+      },
+      {
+        weekDay: "Wednesday",
+        theme: "Navigation Bar",
+        skills: [
+          {
+            id: 1,
+            skill: "Links"
+          },
+          {
+            id: 2,
+            skill: "styles"
+          }
+        ],
+        theHeaviest: "connection of links"
+      },
+      {
+        weekDay: "Thursday",
+        theme: "Report Card",
+        skills: [
+          {
+            id: 1,
+            skill: "props"
+          },
+          {
+            id: 2,
+            skill: "handler"
+          },
+          {
+            id: 3,
+            skill: "styles"
+          },
+          {
+            id: 4,
+            skill: "image"
+          }
+        ],
+        theHeaviest: "connection of images"
+      },
+      {
+        weekDay: "Friday",
+        theme: "Report Details",
+        skills: [
+          {
+            id: 1,
+            skill: "props"
+          },
+          {
+            id: 2,
+            skill: "handler"
+          },
+          {
+            id: 3,
+            skill: "styles"
+          }
+        ],
+        theHeaviest: "report"
+      }
+    ]
+  },
+  {
+    id: 6,
+    title: "Week 6. Refactoring purchaselist and creation new counter",
+    date: "Dec 23, 2022",
+    image: Links.week6,
+    main: "Creation new counter",
+    description: [
+      {
+        weekDay: "Tuesday",
+        theme: "refactoring modal and todo card",
+        skills: [
+          {
+            id:1,
+            skill: "create custom select", 
+          },
+          {
+            id: 2,
+            skill: "refactoring modal"
+          },
+          {
+            id: 3,
+            skill: "refactoring todo card"
+          },
+          {
+            id: 4,
+            skill: "create custom checkbox"
+          }
+        ],
+        theHeaviest: "create custom checkbox"
+      },
+      {
+        weekDay: "Wednesday",
+        theme: "Refactoring form, add search form",
+        skills: [
+          {
+            id: 1,
+            skill: "refactoring form"
+          },
+          {
+            id: 2,
+            skill: "add search form"
+          },
+          {
+            id: 3,
+            skill: "switching form and search form"
+          },
+          {
+            id: 4,
+            skill: "object destructuring"
+          }
+        ],
+        theHeaviest: "switching form and search form"
+      },
+      {
+        weekDay: "Thursday",
+        theme: "Create error screen, create sizes for button, working out small errors",
+        skills: [
+          {
+            id: 1,
+            skill: "create error screen"
+          },
+          {
+            id: 2,
+            skill: "create sizes for button"
+          }
+        ],
+        theHeaviest: "create error screen"
+      },
+      {
+        weekDay: "Friday",
+        theme: "Create new counter",
+        skills: [
+          {
+            id: 1,
+            skill: "create new counter"
+          }
+        ],
+        theHeaviest: "create new counter"
+      }
+    ]
+  },
+  
 ]

@@ -11,6 +11,7 @@
   NEWS: "/news",
   INFO: "/info",
   COUNTER: "/counter",
-  FORM: "/form"
+  PURCHASE: "/purchase",
+  ALLCATEGORIES: "/categories"
   }
  

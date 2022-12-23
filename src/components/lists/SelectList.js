@@ -1,5 +1,3 @@
-import styles from '../../styles/components/lists/SelectList.Module.css'
-
 const SelectList = (props) => {
   const {data, className} = props
 

@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+ 
   margin: 20px auto;
   background-image: url("https://img.freepik.com/free-vector/paper-style-white-monochrome-background_52683-66443.jpg?w=996&t=st=1668211660~exp=1668212260~hmac=b1fb83945dd79a428c426efda31d9001d10cc91b6775db2d3ee7eb8070759f10");
   background-repeat: no-repeat;
@@ -22,11 +23,13 @@
 .descriptionSection {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   margin-top: 40px;
 }
 
 .description {
   width: 400px;
+  margin: 10px;
   padding: 10px;
   border: 1px solid rgba(0, 0, 0, 0.3);
   box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.3);

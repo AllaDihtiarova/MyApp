@@ -21,10 +21,11 @@ import Label from './elements/Label'
 import Error from './elements/Error'
 import DefaultImage from './elements/DefaultImage'
 import IconButton from './buttons/IconButton'
+import ToolsBar from './elements/ToolsBar'
 
 export {
   Button, MoreButton, TodoCard, Tab, FilterModal, SearchForm, SelectForm,
   CategoriesList, TodoList, SelectList, AuthorSection, TabSection, Form, NavBar,
   ReportCard, SwitchTabs, SkillCard, Counter, Input, Label, Error, DefaultImage,
-  IconButton
+  IconButton, ToolsBar
 }
